@@ -21,7 +21,7 @@ class MyApp extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return const MaterialApp(
-      title: 'VigenSia',
+      title: 'ViGeneSia +',
       home: LoginScreen(),
     );
   }
