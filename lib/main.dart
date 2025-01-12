@@ -9,7 +9,7 @@ Future<void> main() async {
   runApp(const ProviderScope(child: MyApp()));
 }
 
-const constServerApi = "http://192.168.1.9:8080/api";
+const constServerApi = "https://e552-182-2-167-149.ngrok-free.app/api";
 
 String getApiRoute(route) {
   return '$constServerApi/$route';
