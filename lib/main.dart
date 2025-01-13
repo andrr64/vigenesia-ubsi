@@ -1,6 +1,7 @@
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/date_symbol_data_local.dart';
+import 'package:vigenesia_app/api_endpoint.dart';
 import 'package:vigenesia_app/views/login/login.dart';
 
 Future<void> main() async {
@@ -9,10 +10,8 @@ Future<void> main() async {
   runApp(const ProviderScope(child: MyApp()));
 }
 
-const constServerApi = "https://e552-182-2-167-149.ngrok-free.app/api";
-
 String getApiRoute(route) {
-  return '$constServerApi/$route';
+  return '$URL_ENDPOINT/$route';
 }
 
 class MyApp extends ConsumerWidget {
